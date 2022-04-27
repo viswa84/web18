@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>backend</div>
+    <div>frontend</div>
+    <form  id="invform">
+        <input id="imgurl" type="text" placeholder="Enter umg url"/>
+        <input id="name" type="text" placeholder="enter invster "/>
+        <input id="role" type="text" placeholder="enter invester role"/>
+        <input  id="logo" type="text" placeholder="Enter compony logo"/>
+        <input type="submit">
+        
+    </form>
+</body>
+</html>
+<script>
+
+document.querySelector("#invform")
+.addEventListener("submit",myfun)
+
+var invarr = []
+
+
+function myfun(){
+
+    event.preventDefault();
+
+    var invobj = {
+        invsimg: invform.imgurl.value,
+        invname:invform.name.value,
+        invform:invform.role.value,
+        invform:invform.logo.value
+    };
+    // console.log(invobj)
+
+    invarr.push(invobj)
+    console.log(invarr)
+
+
+}
+
+
+
+</script>
